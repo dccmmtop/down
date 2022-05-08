@@ -101,7 +101,7 @@ func getArgs() *config {
 	flag.StringVar(&con.dbHost, "dh", getStringArgFromEnv("dbHost", "40.18.14.196"), "数据库ip, "+envHelpMsg("dbHost"))
 	flag.StringVar(&con.dbPort, "dp", getStringArgFromEnv("dbPort", "13306"), "数据库 port, "+envHelpMsg("dbPort"))
 	flag.StringVar(&con.dbUser, "du", getStringArgFromEnv("dbUser", "root"), "数据库用户, "+envHelpMsg("dbUser"))
-	flag.StringVar(&con.dbPass, "dP", getStringArgFromEnv("dbPass", "XnKd*09e"), "数据库密码, "+envHelpMsg("dbPass"))
+	flag.StringVar(&con.dbPass, "dP", getStringArgFromEnv("dbPass", "xxxxx"), "数据库密码, "+envHelpMsg("dbPass"))
 	flag.Parse()
 	return &con
 }
